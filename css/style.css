@@ -1,0 +1,80 @@
+.portfolio, .about {
+  padding-top:80px;
+}
+.intro {
+  border-radius: calc(.25rem - 1px);
+  background-color: rgba(0,200,100,.4);
+}
+.intro * {
+  padding: 10px 10px;
+}
+
+.main-content, .left-nav{
+  margin-top:20px;
+}
+
+.left-nav a {
+  color: black;
+}
+.left-nav a:hover {
+  color: rgba(0,200,100);
+  background-color: black;
+}
+
+/* https://caniuse.com/#search=picture */
+/* https://www.w3schools.com/css/css_rwd_images.asp */
+/* https://stackoverflow.com/questions/45011242/media-query-for-img-src-attribute */
+@media only screen and (min-device-width: 400px) {
+  body { 
+      background-image: url('img_flowers.jpg'); 
+  }
+}
+
+/* mobile first */
+/* image swapping */
+.desktop-img {
+  display:none;
+}
+.mobile-img {
+  display:block;
+  text-align:center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: inline;
+  }
+}
+
+.cta-text {
+  text-align: right;
+}
+
+/* flex parent */
+.links {
+  display: flex;
+  justify-content: center;
+}
+/* flex child */
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size:48px;
+}
+.links a:hover {
+  color: rgba(0,200,100);
+  background-color: black;
+}
+.attribute {
+  font-size: .5em;
+  color:rgba(0,200,100);
+  margin-top: 10px;
+}
+.attribute a {
+  text-decoration: none;
+  color: white;
+}
