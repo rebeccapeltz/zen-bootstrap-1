@@ -24,11 +24,7 @@
 /* https://caniuse.com/#search=picture */
 /* https://www.w3schools.com/css/css_rwd_images.asp */
 /* https://stackoverflow.com/questions/45011242/media-query-for-img-src-attribute */
-@media only screen and (min-device-width: 400px) {
-  body { 
-      background-image: url('img_flowers.jpg'); 
-  }
-}
+
 
 /* mobile first */
 /* image swapping */
